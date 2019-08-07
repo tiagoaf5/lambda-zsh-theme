@@ -31,7 +31,7 @@ function mnml_cwd {
     printf '%b' "$_g${(j:/:)cwd//\//$_w/$_g}$_w"
 }
 
-#local ret_status="%(?:%{$fg_bold[green]%}λ :%{$fg_bold[red]%}λ )" # with bold lambda
-local ret_status="%(?:%{$fg[green]%}λ :%{$fg[red]%}λ )" # with normal lambda
+#local ret_status="%(?:%{$fg_bold[cyan]%}λ :%{$fg_bold[red]%}λ )" # with bold lambda
+local ret_status="%(?:%{$fg[cyan]%}λ :%{$fg[red]%}λ )" # with normal lambda
 
 PROMPT='$(mnml_cwd 10 20) ${ret_status}%f› '
